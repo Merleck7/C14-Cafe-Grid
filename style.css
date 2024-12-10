@@ -229,6 +229,7 @@ main{
     width: 100%;
     padding: 0;
     overflow: hidden;
+    min-width: 450px;
 }
 .item_left{
     padding: 0;
@@ -241,7 +242,7 @@ main{
     height: 100%;
     object-fit: cover;
     position: absolute;
-    left: -65%; /* Ajustar para mover hacia la izquierda */
+    left: -65%; 
 }
 .right1{
     width: 100%;
@@ -251,6 +252,7 @@ main{
     border-radius: 1%;
     display: flex;
     flex-direction: column;
+    min-width: 400px;
 }
 .right1 img {
     width: 100%;
@@ -261,11 +263,10 @@ main{
 .item_right{
     display: flex;
     position: relative;
-    height: 50%;
-    
+    height: 50%;    
 }
 .overlay {
-    position: absolute;     /* El overlay se posiciona sobre la imagen */
+    position: absolute;    
     top: 0;
     left: 0;
     right: 0;
@@ -283,13 +284,15 @@ main{
 }
 
 .item_left:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
     cursor: pointer;
+    transition: transform 0.8s ease;
 }
 
 .item_right:hover {
-    transform: scale(1.1);
+    transform: scale(1.04);
     cursor: pointer;
+    transition: transform 0.8s ease;
 }
 /* Estilo del enlace */
 .image-link {
@@ -371,6 +374,9 @@ main{
     padding: 0;
     margin: 0;
 }
+.left img{
+    min-width: 300px;
+}
 .left a{
     text-decoration: none; 
     padding: 0;
@@ -391,6 +397,7 @@ main{
     justify-content: center;
     padding-bottom:  20px;
     padding: 0 20px;
+    min-width: 200px;
 }
 
 .right a{
@@ -423,7 +430,7 @@ main{
 
 }
 .subright:hover img{
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: transform 0.8s ease;
 }
 .subright div {
@@ -517,5 +524,15 @@ footer{
   @media (max-width: 768px) {
     .grid-container {
       grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+    nav .navers, nav .icons{
+        display: none;
+    } 
+    .grid2{
+        display: flex;
+    
+    }
+    .right{
+        display: flex;
     }
   }
