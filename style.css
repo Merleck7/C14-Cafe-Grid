@@ -18,6 +18,10 @@
     color: white;
 }
 /*----------------------Nav---------------------------*/
+.hamM{
+    display: none;
+    visibility: hidden;
+}
 nav { 
     display: flex;
     justify-content: space-around;
@@ -534,5 +538,11 @@ footer{
     }
     .right{
         display: flex;
+    }
+    .hamM{
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        width: 30px;
     }
   }
