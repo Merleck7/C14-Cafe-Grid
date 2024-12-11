@@ -533,12 +533,14 @@ footer{
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    border: solid 1px;
     align-items: center;
     text-align: center;
     justify-content: center;
     align-content: center;
     background-color: white;
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 /*----------------mobile-------------------*/
   @media (max-width: 800px) {
@@ -637,8 +639,6 @@ footer{
     .sec-8{
         display: none;
     }
-
-
     .left1{
         border-radius: 1%;
         width: 100%;
