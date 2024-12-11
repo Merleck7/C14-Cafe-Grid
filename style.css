@@ -530,7 +530,7 @@ footer{
 .float a{
     text-decoration: none; 
     color: inherit;
-    width: 70%;
+    width: 90px;
     height: 90px;
     border-radius: 50%;
     border: solid 1px;
