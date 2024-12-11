@@ -215,7 +215,7 @@ main{
 .sec-6{
     background-color: #ffeff5;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -582,6 +582,7 @@ footer{
         gap: 30px;
         padding: 10px 30px;
         height: 350px;
+        overflow: hidden;
     }
     .sec-mobile{
         display: flex;
