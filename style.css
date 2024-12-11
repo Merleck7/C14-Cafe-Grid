@@ -2,12 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box; 
+    font-family: "Crimson Text", serif;
 }
-@font-face {
-    font-family: 'SoDo Sans'; /* Nombre que usarás para referirte a la fuente */
-    src: url('./fonts/SoDoSans-Regular.ttf') format('truetype'); /* Ruta y formato del archivo */
+p{
+    font-size: 17.3px;
 }
-
+body{
+    color: #333638;
+}
 /*----------------------Header------------------------*/
 .adds{
     background-color: rgb(68, 68, 68);
@@ -25,14 +27,14 @@
 nav { 
     display: flex;
     justify-content: space-around;
+    position: sticky;
     margin: 0px 0px;
-    padding: 0 3%;
+    padding: 0;
     height: 90px;
     align-items: center;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     width: 100%;
     top: 0;
-    position: sticky;
     background-color: white;
     z-index: 1000;
 }
@@ -57,12 +59,13 @@ ul li a{
     display: flex;
     justify-content: center;
     width: 30%;
+    padding-left: 10px;
 }
 .logo{
     display: flex;
 }
 .logo img{
-    width: 8%;
+    width: 7%;
 }
 .icons{
     display: flex;
@@ -83,6 +86,9 @@ main{
     margin: 0;
     padding: 0;
 }
+.main-img{
+    display: flex;
+}
 .main-img img{
     width: 100%;
     margin: 0;
@@ -98,21 +104,26 @@ main{
     flex-direction: column;
     height: auto;
     margin: 0;
-    padding: 3% 27%;
-    gap: 40px;
+    padding: 3% 2%;
+    gap: 30px;
 }
 .sec-1 h1{
-    font-size: 50px;
+    font-size: 43px;
 }
 .sec-1 p{
     font-size: 18px;
 }
 .sec-1 button{
     background-color: #832626;
-    border:  solid 1px black;
+    border:  none;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding: 0 28px;
+}
+.sec-1 button p{
     color: white;
-    height: 40px;
-    padding: 0 10px;
+    font-size: 17px;
 }
 /*----------------Section-2----------------*/
 .sec-2{
@@ -122,9 +133,11 @@ main{
     gap: 2%;
     height: auto;
     overflow: hidden;
+    padding: 60px 0;
 }
 .sec-2 img{
     width: 100%;
+    max-width: 200px;
 }
 
 /*---------------Section-3-----------------*/
@@ -170,7 +183,8 @@ main{
     margin: 0;
 }
 .sec-4 img:hover{
-    transform: scale(1.1);
+    transform: scale(1.04);
+    transition: transform 0.8s ease;
 }
 .sec-4 div{
     display: flex;
@@ -211,8 +225,11 @@ main{
     flex-direction: column;
     height: auto;
     margin: 0;
-    padding: 3% 30%;
+    padding: 3% 34%;
     gap: 40px;
+}
+.sec-5 h1 {
+    font-size: 31px;
 }
 .sec-5 img {
     width: 100%;
@@ -227,7 +244,7 @@ main{
     flex-direction: column;
     height: auto;
     margin: 0;
-    padding: 50px 7%;
+    padding: 50px 3%;
     gap: 40px;
 }
 .grid-container{
@@ -239,7 +256,7 @@ main{
 }
 .left1{
     display: flex;
-    border-radius: 1%;
+    border-radius: 5px;
     width: 100%;
     padding: 0;
     overflow: hidden;
@@ -249,7 +266,7 @@ main{
     padding: 0;
     height: 592px;
     position: relative;
-    border-radius: 1%;
+    border-radius: 3px;
     width: 100%;
 }
 .item_left img{
@@ -262,22 +279,22 @@ main{
     width: 100%;
     height: 592px;
     gap: 30px;
-    overflow: hidden;
-    border-radius: 1%;
     display: flex;
     flex-direction: column;
-    min-width: 250px;
+    min-width: 250px;    
 }
 .right1 img {
     width: 100%;
     object-fit: cover;
     overflow: hidden;
-    border-radius: 1%;
+    border-radius: 7px;
 }
 .item_right{
     display: flex;
     position: relative;
     height: 50%;    
+    overflow: hidden;
+    border-radius: 7px;
 }
 .overlay {
     position: absolute;    
@@ -285,33 +302,39 @@ main{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);  
+    background-color: rgba(0, 0, 0, 0.4);  
     color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    flex-direction: column;
     gap: 15px;
+    border-radius: 7px;
 }
 .overlay a{
     color: inherit;
+    font-size: 12px;
+}
+.overlay p{
+    color: inherit;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .item_left:hover {
-    transform: scale(1.04);
+    transform: scale(1.02);
     cursor: pointer;
     transition: transform 0.8s ease;
 }
 
-.item_right:hover {
+.item_right:hover img{
     transform: scale(1.04);
     cursor: pointer;
     transition: transform 0.8s ease;
 }
 .image-link {
     position: relative;     
-    display: inline-block;   
-    text-decoration: none;  
+    display: inline-block;     
 }
 
   /*--------------------Section-7------------------------------------*/
@@ -525,7 +548,6 @@ footer{
     left: 20px;
     align-items: center;
     z-index: 1000;
-    font-size: 20px;
 }
 .float a{
     text-decoration: none; 
@@ -538,9 +560,9 @@ footer{
     justify-content: center;
     align-content: center;
     background-color: white;
-    padding: 0 10px;
+    padding: 0 12px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight:600;
 }
 /*----------------mobile-------------------*/
   @media (max-width: 800px) {
@@ -566,11 +588,13 @@ footer{
         visibility: visible;
         display: flex;
         justify-content: space-between;
-        width: 30px;
+        width: 60px;
+        gap: 10px;
     }
     nav{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 10px;
     }
     nav .navers, #shopping{
         display: none;
@@ -586,6 +610,16 @@ footer{
     .logo{
         margin: 0;
         padding: 0;
+        width: 24%;
+        max-width: 80px;
+    }
+    .logo img{
+        width: 100%;
+        max-width: fit-content;
+    }
+    .icons svg {
+        width: 23px;
+        display: flex;
     }
 /*------------------Section-1--------------------*/
 .sec-1{
