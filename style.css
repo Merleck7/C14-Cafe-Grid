@@ -87,7 +87,7 @@ main{
     margin: 0;
     padding: 0;
 }
-
+/*-------------Section-1-----------------------*/
 .sec-1{
     background-color: #ffeff5;
     display: flex;
@@ -113,6 +113,7 @@ main{
     height: 40px;
     padding: 0 10px;
 }
+/*----------------Section-2----------------*/
 .sec-2{
     display: flex;
     justify-content: center;
@@ -120,6 +121,7 @@ main{
     height: auto;
     padding: 2%;
 }
+/*---------------Section-3-----------------*/
 .sec-3{
     background-color: white;
     display: flex;
@@ -139,6 +141,7 @@ main{
 .sec-3 p{
     font-size: 18px;
 }
+/*-------------Section-4-----------------*/
 .sec-4{
     display: flex;
     justify-content: center;
@@ -192,6 +195,7 @@ main{
     padding: 10px;
     color: white;
 }
+/*----------------Section-5-------------------------------*/
 .sec-5{
     background-color: white;
     display: flex;
@@ -298,7 +302,6 @@ main{
     cursor: pointer;
     transition: transform 0.8s ease;
 }
-/* Estilo del enlace */
 .image-link {
     position: relative;     
     display: inline-block;   
@@ -318,6 +321,7 @@ main{
     margin: 0;
     padding: 50px 7%;
     gap: 40px;
+    overflow: hidden;
 }
 .sec-7 img{
     width: 300px;
@@ -359,7 +363,7 @@ main{
     margin: 0;
     padding: 40px 50px;
     gap: 30px;
-    
+    overflow: hidden;
 }
 .sec-8 img{
     border-radius: 1%;
@@ -510,8 +514,7 @@ footer{
     display: flex;
     position: fixed;
     background-color: transparent;
-    position: fixed; /* Hace que el elemento flote */
-    bottom: 20px; /* Se posiciona desde la parte inferior */
+    bottom: 20px; 
     left: 20px;
     align-items: center;
     z-index: 1000;
