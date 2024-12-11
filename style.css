@@ -510,9 +510,10 @@ footer{
     display: flex;
     position: fixed;
     background-color: transparent;
+    position: fixed; /* Hace que el elemento flote */
+    bottom: 20px; /* Se posiciona desde la parte inferior */
+    left: 20px;
     align-items: center;
-    margin-top: 40%;
-    margin-left: 1%;
     z-index: 1000;
     font-size: 20px;
 }
