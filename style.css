@@ -129,7 +129,7 @@ main{
     flex-direction: column;
     height: auto;
     margin: 0;
-    padding: 3% 27%;
+    padding: 0 27%;
     gap: 40px;
 }
 .sec-3 h1{
@@ -233,7 +233,7 @@ main{
     width: 100%;
     padding: 0;
     overflow: hidden;
-    min-width: 450px;
+    min-width: 350px;
 }
 .item_left{
     padding: 0;
@@ -246,7 +246,7 @@ main{
     height: 100%;
     object-fit: cover;
     position: absolute;
-    left: -65%; 
+    left: -63%; 
 }
 .right1{
     width: 100%;
@@ -256,7 +256,7 @@ main{
     border-radius: 1%;
     display: flex;
     flex-direction: column;
-    min-width: 400px;
+    min-width: 300px;
 }
 .right1 img {
     width: 100%;
@@ -553,6 +553,22 @@ footer{
         display: flex;
         justify-content: space-between;
         width: 30px;
+    }
+
+    .left1{
+        border-radius: 1%;
+        width: 100%;
+        padding: 0;
+    }
+    .item_left{
+        padding: 0;
+        height: 300px;
+        border-radius: 1%;
+        width: 100%;
+    }
+    .item_left img{
+        width: 170%;
+        object-fit: cover;
     }
     .sec-8-mobile{
         display: flex;
