@@ -118,10 +118,13 @@ main{
 .sec-2{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    gap: 2%;
     height: auto;
-    padding: 2%;
     overflow: hidden;
+}
+.sec-2 img{
+    width: 100%;
 }
 
 /*---------------Section-3-----------------*/
