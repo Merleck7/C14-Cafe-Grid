@@ -263,7 +263,7 @@ main{
     border-radius: 1%;
     display: flex;
     flex-direction: column;
-    min-width: 300px;
+    min-width: 250px;
 }
 .right1 img {
     width: 100%;
@@ -556,14 +556,72 @@ footer{
         margin: 0;
         padding: 0;
     }
+/*------------------Nav-Section----------------*/
+    .hamM{
+        visibility: visible;
+        display: flex;
+        justify-content: space-between;
+        width: 30px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav .navers, #shopping{
+        display: none;
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .icons{
+        padding: 0;
+        margin: 0;
+        width: 20px;
+    }
+    .logo{
+        margin: 0;
+        padding: 0;
+    }
+/*------------------Section-1--------------------*/
+.sec-1{
+    padding: 10%;
+}
+.sec-1 h1{
+    font-size: 30px;
+}
+/*------------------Section-2--------------------*/    
+.sec-2 img{
+    max-width: 150px;
+}
+/*------------------Section-3--------------------*/   
+.sec-3{
+    padding: 10%;
+}
+.sec-3 h1{
+    font-size: 30px;
+}
+/*------------------Section-5--------------------*/
+.sec-5{
+    padding: 10%;
+}
+.sec-5 h1{
+    font-size: 30px;
+}
+/*------------------Section-6--------------------*/
+    .sec-6{
+    background-color: #ffeff5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+    }
     .grid-container {
       grid-template-columns: 1fr; 
-    }
-    nav .navers, nav .icons{
-        display: none;
-    } 
-    .sec-2 img{
-        max-width: 150px;
     }
     .grid2{
         display: flex;
@@ -572,15 +630,11 @@ footer{
     .right{
         display: flex;
     }
+/*------------------Section-8---------------------*/    
     .sec-8{
         display: none;
     }
-    .hamM{
-        visibility: visible;
-        display: flex;
-        justify-content: space-between;
-        width: 30px;
-    }
+
 
     .left1{
         border-radius: 1%;
