@@ -361,7 +361,6 @@ main{
   .sec-7{
     background-color: white;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
     height: auto;
@@ -626,7 +625,7 @@ footer{
     width: 50%;
     max-width: 170px;
 }
-/*-------------Float-------------------*/
+/*-------------Floats-------------------*/
 .float{
     display: flex;
     position: fixed;
@@ -651,6 +650,44 @@ footer{
     margin: 0;
     font-size: 20px;
     font-weight:700;
+}
+.float2{
+    display: flex;
+    position: fixed;
+    background-color: transparent;
+    bottom: 50%; 
+    right: 20px;
+    align-items: center;
+    z-index: 1000;
+}
+.float2 a{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    border: solid 3px #333638;
+}
+.float2 i{
+    text-decoration: none; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    padding: 0 12px;
+    margin: 0;
+    font-size: 20px;
+    font-weight:700;
+    color: #333638;
+    border: solid 1px #333638;
 }
 /*----------------mobile-------------------*/
   @media (max-width: 800px) {
@@ -716,7 +753,10 @@ footer{
 .sec-1 h1{
     font-size: 30px;
 }
-/*------------------Section-2--------------------*/    
+/*------------------Section-2--------------------*/  
+.sec-2{
+    justify-content: flex-start;
+}  
 .sec-2 img{
     max-width: 150px;
 }
@@ -744,7 +784,7 @@ footer{
     flex-direction: column;
     height: auto;
     margin: 0;
-    padding: 0;
+    padding: 50px 0;
     gap: 40px;
     }
     .grid-container {
@@ -757,6 +797,10 @@ footer{
     .right{
         display: flex;
     }
+/*------------------Section-7---------------------*/
+    .sec-7{
+        align-items: flex-start;
+    }    
 /*------------------Section-8---------------------*/    
     .sec-8{
         display: none;
@@ -804,5 +848,24 @@ footer{
         text-decoration: none;
         color: inherit;
         font-size: 12px;
+    }
+    /*-----------Footer--------------*/
+    footer{
+        padding-top: 70px;
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        width: 100%;
+        padding: 0 2%;
+    }
+    .footer-bottom{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+        width: 100%;
+        padding: 2%;
     }
   }
