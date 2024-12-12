@@ -912,6 +912,10 @@ footer{
     display: flex;
     overflow-x: auto; /* Activa el scroll horizontal */
     scroll-snap-type: x mandatory; /* Desplazamiento "suave" entre elementos */
+    scrollbar-width: none;
+}
+.imgbottom::-webkit-scrollbar {
+    display: none; /* Oculta el scroll en navegadores basados en WebKit */
 }
 .titles7{
     justify-self: center;
