@@ -750,6 +750,12 @@ footer{
 .sec-mobile{
     display: flex;
     gap: 40px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+.sec-mobile::-webkit-scrollbar {
+    display: none;
 }
 .mobile-items{
     width: 50%;
