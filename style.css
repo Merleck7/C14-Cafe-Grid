@@ -718,6 +718,20 @@ footer{
 }
 /*----------------mobile-------------------*/
     @media (max-width: 1200px) {
+        /*------------------Section-2--------------------*/  
+    .sec-2{
+        justify-content: flex-start;
+        overflow-x: auto; 
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+}  
+    .sec-2::-webkit-scrollbar {
+        display: none; 
+    }
+    .sec-2 img{
+        max-width: 170px;
+        scroll-snap-align: center;
+}
     /*-------------Section-4-----------------*/
 .sec-4{
     display: grid;
@@ -762,6 +776,7 @@ footer{
     gap: 30px;
     min-width: 350px;
     text-align: left;
+    scroll-snap-align: center;
 }
 .mobile-items div img {
     width: 100%;
@@ -854,13 +869,7 @@ footer{
 .sec-1 h1{
     font-size: 30px;
 }
-/*------------------Section-2--------------------*/  
-.sec-2{
-    justify-content: flex-start;
-}  
-.sec-2 img{
-    max-width: 150px;
-}
+
 /*------------------Section-3--------------------*/   
 .sec-3{
     padding: 10%;
