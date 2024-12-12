@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box; 
-    font-family: "Crimson Text", serif;
+    font-family: "EB Garamond", serif;
 }
 body{
     color: #333638;
@@ -151,30 +151,31 @@ main{
     flex-direction: column;
     height: auto;
     margin: 0;
-    padding: 0 27%;
-    gap: 40px;
+    padding: 0 24%;
+    gap: 20px;
     font-size: 17.3px;
 }
 .sec-3 h1{
-    font-size: 50px;
-    font-weight: bold;
+    font-size: 44px;
 }
 #firstp{
     font-family: "Kantumruy Pro", sans-serif;
-    font-size: 13px;
+    font-size: 12px;
 }
 .sec-3 p{
     font-size: 18px;
 }
 /*-------------Section-4-----------------*/
 .sec-4{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
     width: 100%;
-    padding: 40px 0;
+    justify-items: center;
+    place-items: center;
+    align-items: stretch;
+    padding: 40px 150px;
     height: 100%;
-    flex-wrap: wrap;
     font-size: 17.3px;
 }
 .sec-4 div div {
@@ -182,10 +183,12 @@ main{
     overflow: hidden;
     object-fit: cover;
     padding: 0;
+    border-radius: 10px;
 }
 .sec-4 img {
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     padding: 0;
     margin: 0;
 }
@@ -195,7 +198,7 @@ main{
 }
 .sec-4 div{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -206,7 +209,7 @@ main{
 }
 .sec-4 img {
     width: 100%;
-    border-radius: 10px;
+    
     margin: 0;
     padding: 0;
 }
@@ -215,6 +218,7 @@ main{
 }
 .sec-4italic{
     font-style: italic;
+    width: 100%;
 }
 .sec-4 button {
     border: none;
@@ -492,7 +496,7 @@ main{
 }
 .grid2{
     display: grid;
-    grid-template-columns: 1.45fr 1fr;
+    grid-template-columns: 1.3fr 1fr;
     gap: 40px; 
     width: 80%; 
 }
@@ -516,6 +520,7 @@ main{
     gap: 30px;
     height: auto;
     width: auto;
+    border-radius: 3px;
 }
 .right p{
     font-size: 12px;
@@ -530,7 +535,6 @@ main{
     height: 100%;
     max-width: 200px;
     object-fit: cover;
-    border-radius: 2px;
 }
 .subright{
     display: flex;
@@ -713,6 +717,74 @@ footer{
     border: solid 1px #333638;
 }
 /*----------------mobile-------------------*/
+    @media (max-width: 1200px) {
+    /*-------------Section-4-----------------*/
+.sec-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+    place-items: center;
+    padding: 40px 150px;
+    height: 100%;
+    font-size: 17.3px;
+}
+/*------------------Section-8---------------------*/    
+.sec-8{
+    display: none;
+}
+.sec-8-mobile{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffeff5;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    padding: 40px 30px;
+    height: auto;
+    overflow: hidden;
+}
+.sec-8-mobile h1{
+    font-size: 34px;
+}
+.sec-mobile{
+    display: flex;
+    gap: 40px;
+}
+.mobile-items{
+    width: 50%;
+    gap: 30px;
+    min-width: 350px;
+    text-align: left;
+}
+.mobile-items div img {
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+}
+.mobile-items a p{
+    padding: 15px 0;
+    font-family: "Kantumruy Pro", sans-serif;
+}
+.mobile-items a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
+    display: flex;
+}
+.mobile-items a h1 {
+    font-size: 18px;
+}
+.mobile-items div{
+    border-radius: 5px;
+    overflow: hidden;
+}
+.mobile-items a:hover img{
+    transform: scale(1.02);
+    transition: transform 0.8s ease;
+}
+}
+/*----------------mobile-------------------*/
   @media (max-width: 800px) {
     .main-img{
         display: flex;
@@ -790,6 +862,17 @@ footer{
 .sec-3 h1{
     font-size: 30px;
 }
+/*-------------Section-4-----------------*/
+.sec-4{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    width: 100%;
+    place-items: center;
+    padding: 40px 0px;
+    height: 100%;
+    font-size: 17.3px;
+}
 /*------------------Section-5--------------------*/
 .sec-5{
     padding: 10%;
@@ -829,75 +912,7 @@ footer{
     justify-self: center;
     align-self: center;
 }
-/*------------------Section-8---------------------*/    
-    .sec-8{
-        display: none;
-    }
-    .left1{
-        border-radius: 1%;
-        width: 100%;
-        padding: 0;
-    }
-    .item_left{
-        padding: 0;
-        height: 300px;
-        border-radius: 1%;
-        width: 100%;
-    }
-    .item_left img{
-        width: 170%;
-        object-fit: cover;
-    }
-    .sec-8-mobile{
-        display: flex;
-        flex-direction: column;
-        background-color: #ffeff5;
-        justify-content: center;
-        text-align: center;
-        gap: 40px;
-        padding: 40px 30px;
-        height: auto;
-        overflow: hidden;
-    }
-    .sec-8-mobile h1{
-        font-size: 34px;
-    }
-    .sec-mobile{
-        display: flex;
-        gap: 40px;
-    }
-    .mobile-items{
-        width: 50%;
-        gap: 30px;
-        min-width: 350px;
-        text-align: left;
-    }
-    .mobile-items div img {
-        width: 100%;
-        object-fit: cover;
-        display: flex;
-    }
-    .mobile-items a p{
-        padding: 15px 0;
-        font-family: "Kantumruy Pro", sans-serif;
-    }
-    .mobile-items a{
-        text-decoration: none;
-        color: inherit;
-        font-size: 12px;
-        display: flex;
-    }
-    .mobile-items a h1 {
-        font-size: 18px;
-    }
-    .mobile-items div{
-        border-radius: 5px;
-        overflow: hidden;
-    }
-    .mobile-items a:hover img{
-        transform: scale(1.02);
-        transition: transform 0.8s ease;
-    }
+
     /*-----------Footer--------------*/
     footer{
         padding-top: 70px;
