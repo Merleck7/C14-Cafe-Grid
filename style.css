@@ -4,9 +4,6 @@
     box-sizing: border-box; 
     font-family: "Crimson Text", serif;
 }
-p{
-    font-size: 17.3px;
-}
 body{
     color: #333638;
 }
@@ -36,6 +33,7 @@ nav {
     width: 100%;
     top: 0;
     background-color: white;
+    font-size: 17.3px;
     z-index: 1000;
 }
 nav div{
@@ -88,6 +86,7 @@ main{
 }
 .main-img{
     display: flex;
+    font-size: 17.3px;
 }
 .main-img img{
     width: 100%;
@@ -106,6 +105,7 @@ main{
     margin: 0;
     padding: 3% 2%;
     gap: 30px;
+    font-size: 17.3px;
 }
 .sec-1 h1{
     font-size: 43px;
@@ -134,6 +134,7 @@ main{
     height: auto;
     overflow: hidden;
     padding: 60px 0;
+    font-size: 17.3px;
 }
 .sec-2 img{
     width: 100%;
@@ -152,10 +153,15 @@ main{
     margin: 0;
     padding: 0 27%;
     gap: 40px;
+    font-size: 17.3px;
 }
 .sec-3 h1{
     font-size: 50px;
     font-weight: bold;
+}
+#firstp{
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 13px;
 }
 .sec-3 p{
     font-size: 18px;
@@ -169,6 +175,7 @@ main{
     padding: 40px 0;
     height: 100%;
     flex-wrap: wrap;
+    font-size: 17.3px;
 }
 .sec-4 div div {
     width: 100%;
@@ -227,6 +234,7 @@ main{
     margin: 0;
     padding: 3% 34%;
     gap: 40px;
+    font-size: 17.3px;
 }
 .sec-5 h1 {
     font-size: 31px;
@@ -236,7 +244,7 @@ main{
 }
 /*--------------------Section-6------------------------------------*/
 .sec-6{
-    background-color: #ffeff5;
+    background-color: #f5f1ec;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +253,18 @@ main{
     height: auto;
     margin: 0;
     padding: 50px 3%;
-    gap: 40px;
+    gap: 10px;
+    font-size: 17.3px;
+}
+.sec-6 h1{
+    font-size: 45px;
+    font-weight: 800;
+    padding-bottom: 40px;
+}
+.sec-6 p{
+    font-size: 13px;
+    padding-top: 20px;
+    font-family: "Kantumruy Pro", sans-serif;
 }
 .grid-container{
     display: grid;
@@ -314,6 +333,7 @@ main{
 .overlay a{
     color: inherit;
     font-size: 12px;
+    font-family: "Kantumruy Pro", sans-serif;
 }
 .overlay p{
     color: inherit;
@@ -351,6 +371,14 @@ main{
     padding: 50px 7%;
     gap: 40px;
     overflow: hidden;
+    font-size: 17.3px;
+}
+.sec-7 p{
+    font-family: "Kantumruy Pro", sans-serif;
+    font-size: 15px;
+}
+.sec-7 h1 {
+    font-size: 44px;
 }
 .sec-7 img{
     width: 300px;
@@ -375,27 +403,32 @@ main{
     padding-top: 2px;
 }
 .imgbottom p{
-    font-size: 13px;
+    font-size: 11px;
     color: #707273;
+    font-family: "Kantumruy Pro", sans-serif;
 }
 /*----------------Section-8---------------------*/
 .sec-8-mobile{
     display: none;
 }
 .sec-8{
-    background-color: #ffeff5;
+    background-color: #f5f1ec;
     display: flex;
     align-items: center;
     text-align: center;
     flex-direction: column;
     height: auto;
     margin: 0;
-    padding: 40px 50px;
+    padding: 40px 0px;
     gap: 30px;
     overflow: hidden;
+    font-size: 17.3px;
+}
+.sec-8 h1{
+    font-size: 43px;
 }
 .sec-8 img{
-    border-radius: 1%;
+    border-radius: 6px;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -407,15 +440,25 @@ main{
 }
 .left{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
     text-align: left;
     gap: 15px;
     padding: 0;
     margin: 0;
 }
+.left h1{
+    font-size: 30px;
+    
+}
+.left p{
+    font-size: 12px;
+    width: 114px;
+    padding: 15px 0;
+    font-family: "Kantumruy Pro", sans-serif;
+}
 .left img{
     min-width: 300px;
+    
 }
 .left a{
     text-decoration: none; 
@@ -423,21 +466,20 @@ main{
     margin: 0;
     color: inherit;
     overflow: hidden;
-    border-radius: 1%;
+    border-radius: 5px;
 }
 .grid2{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px; 
+    grid-template-columns: 1.45fr 1fr;
+    gap: 40px; 
     width: 80%; 
 }
 .right{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-bottom:  20px;
-    gap: 20px;
-    padding: 0 20px;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
     min-width: 200px;
 }
 
@@ -447,18 +489,26 @@ main{
     margin: 0;
     color: inherit;
     overflow: hidden;
-    border-radius: 1%;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    height: 100%;
+    height: auto;
+    width: auto;
+}
+.right p{
+    font-size: 12px;
+    font-family: "Kantumruy Pro", sans-serif;
+}
+.right h4 {
+    font-size: 22px;
+    line-height: 1;
 }
 .right img{
     width: 100%;
     height: 100%;
-    max-width: 220px;
+    max-width: 200px;
     object-fit: cover;
-    border-radius: 2%;
+    border-radius: 2px;
 }
 .subright{
     display: flex;
@@ -468,14 +518,18 @@ main{
     height: auto;
     width: 100%;
     min-width: 300px;
-
 }
 .subright:hover img{
     transform: scale(1.05);
     transition: transform 0.8s ease;
 }
 .subright div {
-    width: 50%;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
 }
 
 /*---------------Footer------------------------------*/
@@ -488,12 +542,13 @@ footer{
     background-color: #333638;
     color: white;
     overflow: hidden;
+    font-size: 17.3px;
 }
 .footer-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
-    justify-content: space-between;
-    padding: 0 10%;
+    padding: 0 2%;
 }
 .footer-container input{
     width: 100%;
@@ -511,25 +566,57 @@ footer{
 .footer-section{
     display: flex;
     flex-direction: column;
-    padding: 3% 3%;
     width: 100%;
     max-width: 300px;
-    min-width: 250px;
+    min-width: 100px;
     gap: 20px;
+}
+.footer-section a{
+    font-size: 17px;
+    font-weight: 200;
 }
 .footer-section ul{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+.footer-section h3{
+    font-family: "Kantumruy Pro", sans-serif;
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+.footer-section2 h3{
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: "Kantumruy Pro", sans-serif;
+}
+.social-icons{
+    display: flex;
+}
+.social-icons a {
+    border: solid 1px rgba(255, 255, 255, 0.233);
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+}
+.social-icons a:hover{
+    background-color: white;
+    color: #333638;
+}
+
 .social-icons img {
-    width: 12%;
+    width: 30px;
 }
 .footer-bottom{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 3% 13%;
+    padding: 2%;
 }
 .payment-icons{
     display: flex;
@@ -561,8 +648,9 @@ footer{
     align-content: center;
     background-color: white;
     padding: 0 12px;
+    margin: 0;
     font-size: 20px;
-    font-weight:600;
+    font-weight:700;
 }
 /*----------------mobile-------------------*/
   @media (max-width: 800px) {
@@ -594,7 +682,7 @@ footer{
     nav{
         display: flex;
         justify-content: space-between;
-        padding: 10px;
+        padding: 20px;
     }
     nav .navers, #shopping{
         display: none;
@@ -605,7 +693,7 @@ footer{
     .icons{
         padding: 0;
         margin: 0;
-        width: 20px;
+        width: 60px;
     }
     .logo{
         margin: 0;
