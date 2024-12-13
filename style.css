@@ -561,8 +561,8 @@ main{
     min-width: 40px;
     height: 40px;
     padding: 0;
-    bottom: 10px;
-    right:  10px;
+    bottom: 5%;
+    right:  4%;
     visibility: hidden;
     transform: scale(0); 
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -835,7 +835,7 @@ footer{
     width: 35px;
 }
 .payment-icons p{
-    color: gray;
+    color: #c2c3c4;
 }
 /*-------------Floats-------------------*/
 .float{
@@ -902,24 +902,24 @@ footer{
     border: solid 1px #333638;
 }
 /*----------------mobile-------------------*/
-    @media (max-width: 1200px) {
-    /*----------------------Naver------------------------*/
-    nav{
-        height: 90px;
-    }
-        /*------------------Section-2--------------------*/  
-    .sec-2{
-        justify-content: flex-start;
-        overflow-x: auto; 
-        scroll-snap-type: x mandatory;
-        scrollbar-width: none;
+@media (max-width: 1200px) {
+/*----------------------Naver------------------------*/
+nav{
+    height: 90px;
+}
+    /*------------------Section-2--------------------*/  
+.sec-2{
+    justify-content: flex-start;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
 }  
-    .sec-2::-webkit-scrollbar {
-        display: none; 
-    }
-    .sec-2 img{
-        max-width: 170px;
-        scroll-snap-align: center;
+.sec-2::-webkit-scrollbar {
+    display: none; 
+}
+.sec-2 img{
+    max-width: 170px;
+    scroll-snap-align: center;
 }
     /*-------------Section-4-----------------*/
 .sec-4{
@@ -1004,7 +1004,26 @@ footer{
     padding: 0;
     bottom: 10px;
     right:  10px;
-    border: none;
+    transform: scale(0); 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.mobile-items .image-icon{
+    display: flex;
+    width: 20px;
+    color: #707273;
+    position: absolute; 
+    overflow: hidden;
+    background-color: white;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.mobile-items:hover .icon-container{
+    background-color: white;
+    visibility: visible;
+    transform: scale(1);
+}
+.icon-container:hover .image-icon {
+    transform: translateX(150%); 
+    opacity: 0;
 }
 .mobile-items img {
     width: 100%;
@@ -1022,6 +1041,7 @@ footer{
     display: flex;
     overflow: hidden;
     border-radius: 5px;
+    position: relative;
 }
 .mobile-items a h1 {
     font-size: 18px;
