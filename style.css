@@ -635,6 +635,10 @@ footer{
     margin-left: 85%;
     justify-content: flex-end;
 }
+.newsletter-form input::placeholder{
+    color: rgba(255, 255, 255, 0.721);
+    font-size: 15px;
+}
 .social-icons{
     display: flex;
     justify-content: flex-end;
@@ -674,7 +678,7 @@ footer{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 2%;
+    padding: 50px 20px 10px 20px;
 }
 .payment-icons{
     display: flex;
@@ -683,6 +687,12 @@ footer{
 .payment-icons img{
     width: 50%;
     max-width: 170px;
+}
+.payment-icons svg{
+    width: 25px;
+}
+.payment-icons p{
+    color: gray;
 }
 /*-------------Floats-------------------*/
 .float{
