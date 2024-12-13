@@ -1153,8 +1153,8 @@ footer{
         border-radius: 5px;
     }
     .item_left img{
-        object-fit:contain;
-        height: auto;
+        object-fit: cover;
+        height: auto%;
         width: 100%;
         position: static;
     }
