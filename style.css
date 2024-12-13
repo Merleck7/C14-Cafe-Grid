@@ -960,6 +960,13 @@ footer{
     .right{
         display: flex;
     }
+    .item_left{
+        height: 300px;
+    }
+    .item_left img{
+        object-fit: cover;
+        position: static;
+    }
 /*------------------Section-7---------------------*/
 .sec-7{
     display: flex;
