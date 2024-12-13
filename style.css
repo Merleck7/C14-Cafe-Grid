@@ -121,9 +121,15 @@ main{
     height: 45px;
     padding: 0 28px;
 }
+.sec-1 a{
+    text-decoration: none;
+}
 .sec-1 button p{
     color: white;
     font-size: 17px;
+}
+.sec-1 button:hover{
+    cursor: pointer;
 }
 /*----------------Section-2----------------*/
 .sec-2{
@@ -225,6 +231,9 @@ main{
     background-color: #ae9669;
     padding: 10px;
     color: white;
+}
+.sec-4 button:hover{
+    cursor: pointer;
 }
 /*----------------Section-5-------------------------------*/
 .sec-5{
@@ -422,7 +431,7 @@ main{
     border: solid 1px;
     position: absolute;
     bottom: 10px;
-    right:  5px;
+    right:  10px;
     visibility: hidden;
     font-weight: 200;
 }
@@ -493,6 +502,26 @@ main{
     padding: 0;
     margin: 0;
 }
+.image-icon{
+    display: flex;
+    width: 30px;
+    color: black;
+    background-color: white;
+    border: solid 1px;
+    position: absolute;
+    bottom: 10px;
+    right:  10px;
+    visibility: hidden;
+    font-weight: 200;
+}
+.left:hover .image-icon{
+    visibility: visible;
+    transition: ease 1s;
+}
+.subright:hover .image-icon{
+    visibility: visible;
+    transition: ease 1s;
+}
 .left h1{
     font-size: 30px;
     
@@ -514,6 +543,7 @@ main{
     color: inherit;
     overflow: hidden;
     border-radius: 5px;
+    position: relative;
 }
 .grid2{
     display: grid;
@@ -542,6 +572,7 @@ main{
     height: auto;
     width: auto;
     border-radius: 3px;
+    position: relative;
 }
 .right p{
     font-size: 12px;
