@@ -610,12 +610,12 @@ footer{
     font-family: "Kantumruy Pro", sans-serif;
     padding-bottom: 10px;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
 }
 .footer-section2 h3{
     padding-bottom: 10px;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     font-family: "Kantumruy Pro", sans-serif;
 }
 .newsletter-form{
@@ -689,7 +689,7 @@ footer{
     max-width: 170px;
 }
 .payment-icons svg{
-    width: 25px;
+    width: 35px;
 }
 .payment-icons p{
     color: gray;
