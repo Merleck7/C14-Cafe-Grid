@@ -120,6 +120,8 @@ main{
     align-items: center;
     height: 45px;
     padding: 0 28px;
+    position: relative;
+    overflow: hidden;
 }
 .sec-1 a{
     text-decoration: none;
@@ -130,6 +132,19 @@ main{
 }
 .sec-1 button:hover{
     cursor: pointer;
+}
+.sec-1 button::before{
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    transition: bottom 0.5s ease;    
+}
+.sec-1 button:hover::before{
+    bottom: 0;
 }
 /*----------------Section-2----------------*/
 .sec-2{
@@ -231,9 +246,24 @@ main{
     background-color: #ae9669;
     padding: 10px;
     color: white;
+    position: relative;
+    overflow: hidden;
 }
 .sec-4 button:hover{
     cursor: pointer;
+}
+.sec-4 button::before{
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    transition: bottom 0.5s ease;    
+}
+.sec-4 button:hover::before{
+    bottom: 0;
 }
 /*----------------Section-5-------------------------------*/
 .sec-5{
@@ -423,21 +453,39 @@ main{
 .sec-7 img{
     width: 100%;
 }
-.image-icon{
+.sec-7 .icon-container{
     display: flex;
-    width: 30px;
-    color: black;
+    align-items: center;
+    justify-content: center;
     background-color: white;
-    border: solid 1px;
+    border: none;
     position: absolute;
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+    padding: 0;
     bottom: 10px;
     right:  10px;
     visibility: hidden;
-    font-weight: 200;
+    transform: scale(0); 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border: none;
 }
-.carousel:hover .image-icon{
+.sec-7 .image-icon{
+    display: flex;
+    width: 25px;
+    color: #707273;
+    position: absolute; 
+    overflow: hidden;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.carousel:hover .icon-container{
     visibility: visible;
-    transition: ease 1s;
+    transform: scale(1);
+}
+.icon-container:hover .image-icon {
+    transform: translateX(150%); 
+    opacity: 0;
 }
 .imgbottom{
     display: grid;
@@ -502,26 +550,47 @@ main{
     padding: 0;
     margin: 0;
 }
-.image-icon{
+.sec-8 .icon-container{
     display: flex;
-    width: 30px;
-    color: black;
+    align-items: center;
+    justify-content: center;
     background-color: white;
-    border: solid 1px;
+    border: none;
     position: absolute;
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+    padding: 0;
     bottom: 10px;
     right:  10px;
     visibility: hidden;
-    font-weight: 200;
+    transform: scale(0); 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border: none;
 }
-.left:hover .image-icon{
+
+.sec-8 .image-icon{
+    display: flex;
+    width: 20px;
+    color: #707273;
+    position: absolute; 
+    overflow: hidden;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+.left:hover .icon-container{
+    background-color: white;
     visibility: visible;
-    transition: ease 1s;
+    transform: scale(1);
 }
-.subright:hover .image-icon{
+.subright:hover .icon-container{
     visibility: visible;
-    transition: ease 1s;
+    transform: scale(1);
 }
+.icon-container:hover .image-icon {
+    transform: translateX(150%); 
+    opacity: 0; 
+}
+
 .left h1{
     font-size: 30px;
     
@@ -719,12 +788,32 @@ footer{
     align-items: center;
     justify-content: center;
     color: white; 
+    overflow: hidden;
+    position: relative;
 }
 .social-icons a:hover{
-    background-color: white;
     color: #333638;
 }
-
+.social-icons a::before {
+    content: '';
+    position: absolute;
+    bottom: -120%; 
+    left: -10%;
+    width: 120%;
+    height: 110%; /* Altura extra para simular movimiento */
+    background: linear-gradient(120deg, #ffffff, #ffffff); /* Gradiente de agua */
+    transform: rotate(-5deg);
+    transition: bottom 0.4s ease, transform 0.4s ease;
+    z-index: 0;
+  }
+  .social-icons a:hover::before {
+    bottom: 0;
+    transform: rotate(0deg);
+  }
+  .social-icons a * {
+    position: relative;
+    z-index: 1;
+  }
 .social-icons img {
     width: 30px;
 }
@@ -843,6 +932,30 @@ footer{
     height: 100%;
     font-size: 17.3px;
 }
+/*------------------Section-7---------------------*/
+.sec-7{
+    display: flex;
+    justify-content: flex-start;
+}
+.imgbottom{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
+    scrollbar-width: none;
+}
+.imgbottom::-webkit-scrollbar {
+    display: none; 
+}
+.imgbottom div{
+    min-width: 400px;
+}
+.titles7{
+    justify-self: center;
+    align-self: center;
+}
+.carousel{
+    scroll-snap-align: center;
+}
 /*------------------Section-8---------------------*/    
 .sec-8{
     display: none;
@@ -878,7 +991,22 @@ footer{
     text-align: left;
     scroll-snap-align: center;
 }
-.mobile-items div img {
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    position: absolute;
+    max-width: 40px;
+    min-width: 40px;
+    height: 40px;
+    padding: 0;
+    bottom: 10px;
+    right:  10px;
+    border: none;
+}
+.mobile-items img {
     width: 100%;
     object-fit: cover;
     display: flex;
@@ -892,6 +1020,8 @@ footer{
     color: inherit;
     font-size: 12px;
     display: flex;
+    overflow: hidden;
+    border-radius: 5px;
 }
 .mobile-items a h1 {
     font-size: 18px;
@@ -1038,12 +1168,15 @@ footer{
 }
 .imgbottom{
     display: flex;
-    overflow-x: auto; /* Activa el scroll horizontal */
-    scroll-snap-type: x mandatory; /* Desplazamiento "suave" entre elementos */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; 
     scrollbar-width: none;
 }
 .imgbottom::-webkit-scrollbar {
-    display: none; /* Oculta el scroll en navegadores basados en WebKit */
+    display: none; 
+}
+.imgbottom div{
+    min-width: 300px;
 }
 .titles7{
     justify-self: center;
@@ -1053,7 +1186,7 @@ footer{
     scroll-snap-align: center;
 }
 
-    /*-----------Footer--------------*/
+/*-------------Footer--------------*/
     footer{
         padding-top: 70px;
     }
