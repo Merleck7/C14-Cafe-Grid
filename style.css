@@ -966,7 +966,7 @@ nav{
 .sec-8-mobile{
     display: flex;
     flex-direction: column;
-    background-color: #ffeff5;
+    background-color: #f5f1ec;
     justify-content: center;
     text-align: center;
     gap: 40px;
