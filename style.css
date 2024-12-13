@@ -27,13 +27,13 @@ nav {
     position: sticky;
     margin: 0px 0px;
     padding: 0;
-    height: 90px;
+    height: 110px;
     align-items: center;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     width: 100%;
     top: 0;
     background-color: white;
-    font-size: 17.3px;
+    font-size: 20px;
     z-index: 1000;
 }
 nav div{
@@ -57,24 +57,24 @@ ul li a{
     display: flex;
     justify-content: center;
     width: 30%;
-    padding-left: 10px;
+    padding-left: 60px;
 }
 .logo{
     display: flex;
 }
 .logo img{
-    width: 7%;
+    width: 65px;
 }
 .icons{
     display: flex;
     justify-content: flex-end;
-    padding-right: 3%;
+    padding-right: 60px;
     width: 30%;
-    gap: 8%;
+    gap: 20px;
    
 }
 .icons svg {
-    width: 20px;
+    width: 25px;
     display: flex;
 }
 /*----------------------Main----------------------*/
