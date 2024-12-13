@@ -1154,7 +1154,7 @@ footer{
     }
     .item_left img{
         object-fit: cover;
-        height: auto%;
+        height: 100%;
         width: 100%;
         position: static;
     }
