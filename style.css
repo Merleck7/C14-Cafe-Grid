@@ -563,12 +563,12 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2% 0;
-    gap: 30px;
+    padding: 50px 0;
+    gap: 0px;
     background-color: #333638;
     color: white;
     overflow: hidden;
-    font-size: 17.3px;
+    font-size: 14px;
 }
 .footer-container{
     display: grid;
@@ -598,13 +598,13 @@ footer{
     gap: 20px;
 }
 .footer-section a{
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 200;
 }
 .footer-section ul{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 .footer-section h3{
     font-family: "Kantumruy Pro", sans-serif;
@@ -618,13 +618,45 @@ footer{
     font-size: 12px;
     font-family: "Kantumruy Pro", sans-serif;
 }
+.newsletter-form{
+    position: relative;
+    width: 100%;
+}
+.input-icon{
+    position: absolute;
+    left: 5px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 20px; 
+    height: 20px;
+}
+.newsletter-form svg{
+    display: flex;
+    margin-left: 85%;
+    justify-content: flex-end;
+}
 .social-icons{
     display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    width: auto;
+}
+.footer-section2 h3{
+    text-align: right;
+    padding-right: 100px;
+}
+.newsletter-form button{
+    border: none;
+    background-color: none;
+    color: white;
+}
+.newsletter-form button:hover{
+    cursor: pointer;
 }
 .social-icons a {
     border: solid 1px rgba(255, 255, 255, 0.233);
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
