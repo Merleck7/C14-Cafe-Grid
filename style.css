@@ -395,11 +395,14 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     margin: 0;
-    padding: 50px 7%;
+    padding: 50px 20px;
     gap: 40px;
     overflow: hidden;
     font-size: 17.3px;
     text-align: center;
+}
+.titles7{
+    width: 100%;
 }
 .sec-7 p{
     font-family: "Kantumruy Pro", sans-serif;
@@ -409,24 +412,42 @@ main{
     font-size: 44px;
 }
 .sec-7 img{
-    width: 300px;
+    width: 100%;
+}
+.image-icon{
+    display: flex;
+    width: 30px;
+    color: black;
+    background-color: white;
+    border: solid 1px;
+    position: absolute;
+    bottom: 10px;
+    right:  5px;
+    visibility: hidden;
+    font-weight: 200;
+}
+.carousel:hover .image-icon{
+    visibility: visible;
+    transition: ease 1s;
 }
 .imgbottom{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .imgbottom div{
-    width: 350px;
+    width: 450px;
 }
 .imgbottom a{
     text-decoration: none; 
     color: inherit;
     padding-top: 20px;
     text-align: left;
+    position: relative;
 }
 .imgbottom h3{
-    font-size: 23px;
+    font-size: 29px;
     padding-top: 2px;
+    font-weight: bold;
 }
 .imgbottom p{
     font-size: 11px;
@@ -582,6 +603,8 @@ footer{
     border: solid gray 1px;
     height: 50px;
     padding: 0 10px;
+    color: rgba(255, 255, 255, 0.662);
+    font-size: 17px;
 }
 .footer-container svg {
     width: 20px;
@@ -965,11 +988,17 @@ footer{
         display: flex;
     }
     .item_left{
-        height: 300px;
+        height: 200px;
+        border-radius: 5px;
     }
     .item_left img{
-        object-fit: cover;
+        object-fit:contain;
+        height: auto;
+        width: 100%;
         position: static;
+    }
+    .item_right{
+        height: 200px;
     }
 /*------------------Section-7---------------------*/
 .sec-7{
