@@ -77,6 +77,9 @@ ul li a{
     width: 25px;
     display: flex;
 }
+.icons svg:hover{
+    cursor: pointer;
+}
 /*----------------------Main----------------------*/
 main{
     display: flex;
