@@ -568,7 +568,7 @@ footer{
     background-color: #333638;
     color: white;
     overflow: hidden;
-    font-size: 14px;
+    font-size: 17px;
 }
 .footer-container{
     display: grid;
@@ -580,7 +580,7 @@ footer{
     width: 100%;
     background-color: #333638;
     border: solid gray 1px;
-    height: 40px;
+    height: 50px;
     padding: 0 10px;
 }
 .footer-container svg {
@@ -598,7 +598,7 @@ footer{
     gap: 20px;
 }
 .footer-section a{
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 200;
 }
 .footer-section ul{
@@ -637,7 +637,7 @@ footer{
 }
 .newsletter-form input::placeholder{
     color: rgba(255, 255, 255, 0.721);
-    font-size: 15px;
+    font-size: 17px;
 }
 .social-icons{
     display: flex;
@@ -659,8 +659,8 @@ footer{
 }
 .social-icons a {
     border: solid 1px rgba(255, 255, 255, 0.233);
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
